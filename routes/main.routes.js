@@ -6,5 +6,7 @@ var path = require('path');
 const main_controller = require('../controller/main.controller');
 
 
-router.get('/test', main_controller.test);
+router.post('/create', main_controller.employee_create);
+router.post('/delete_employee',main_controller.employee_delete);
+
 module.exports = router;
